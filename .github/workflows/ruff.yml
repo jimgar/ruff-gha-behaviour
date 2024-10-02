@@ -8,7 +8,7 @@ jobs:
       - uses: astral-sh/ruff-action@v1
         with:
           changed-files: "true"
-        args: "check --select I --fix"
+          args: "check --select I --fix"
   format:
     runs-on: ubuntu-latest
     steps:
@@ -16,4 +16,4 @@ jobs:
       - uses: astral-sh/ruff-action@v1
         with:
           changed-files: "true"
-        args: "format"
+          args: "format"
