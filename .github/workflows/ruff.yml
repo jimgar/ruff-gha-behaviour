@@ -1,20 +1,17 @@
 name: Ruff
 on: [push, pull_request]
 jobs:
-  ruff:
+  ruff-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/ruff-action@v1.1.0
         with:
-          changed-files: "true"
           args: "check --select I --fix"
 
-  format:
+  ruff-format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/ruff-action@v1.1.0
-        with:
-          changed-files: "true"
           args: "format"
