@@ -19,8 +19,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Lint
+      - name: Format
         uses: astral-sh/ruff-action@v1.1.0
+        with:
+          args: "format"
 
       - name: Commit and push changes
         run: |
