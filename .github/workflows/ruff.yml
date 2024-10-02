@@ -6,12 +6,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/ruff-action@v1
+        with:
+          changed-files: "true"
         args: "check --select I --fix"
-        changed-files: "true"
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/ruff-action@v1
+        with:
+          changed-files: "true"
         args: "format"
-        changed-files: "true"
