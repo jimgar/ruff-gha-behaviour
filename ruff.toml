@@ -1,0 +1,22 @@
+# Line length
+line-length = 79
+# Fixes violations if safe to do so
+fix = true
+# Group violations by containing file
+output-format = "grouped"
+
+[lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
