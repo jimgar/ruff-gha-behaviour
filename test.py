@@ -1,5 +1,3 @@
-from os import seomthingthatdoesntexist
-
 my_list = [
     "sdfdgfjhkgjhjhdfgsafdsfdgfjhgh",
     "dddddddddddddddddddddddddddddddddddddddddddd",
@@ -7,4 +5,3 @@ my_list = [
     "sdfjkg",
     "blah",
 ]
-import re
