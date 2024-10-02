@@ -5,6 +5,9 @@ fix = true
 # Group violations by containing file
 output-format = "grouped"
 
+# Taken from:
+# https://docs.astral.sh/ruff/linter/#rule-selection
+# "some of the most popular rules (without being too pedantic)":
 [lint]
 select = [
     # pycodestyle
